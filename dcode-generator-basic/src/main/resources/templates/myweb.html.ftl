@@ -1,3 +1,9 @@
+<#macro card userName>
+-------
+${userName}
+-------
+</#macro>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +14,7 @@
     <ul>
         <#-- 循环渲染导航条 -->
         <#list menuItems as item>
-            <li><a href="${item.url}">${item.label}</a></li>
+        <li><a href="${item.url}">${item.label}</a></li>
         </#list>
     </ul>
     <#-- 底部版权信息（注释部分，不会被输出）-->
